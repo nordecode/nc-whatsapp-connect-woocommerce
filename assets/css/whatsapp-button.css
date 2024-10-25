@@ -1,0 +1,168 @@
+.nc-whatsapp-btn {
+    position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+    bottom: 20px;
+}
+
+.nc-right {
+    right: 20px;
+}
+
+.nc-left {
+    left: 20px;
+}
+
+.nc-whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.nc-whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.nc-whatsapp-popup {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
+}
+
+.nc-whatsapp-btn.nc-left .nc-whatsapp-popup {
+    right: auto;
+    left: 0;
+}
+
+.nc-whatsapp-btn.active .nc-whatsapp-popup {
+    display: block;
+}
+
+.nc-popup-header {
+    background: #f95c2b;
+    color: #ffffff;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nc-header-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nc-verified-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.nc-popup-content {
+    padding: 20px;
+}
+
+.nc-support-info {
+    margin-bottom: 20px;
+}
+
+.nc-support-text {
+    font-size: 15px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.nc-support-hours {
+    font-size: 13px;
+    color: #666;
+}
+
+.nc-message-area {
+    margin-bottom: 15px;
+}
+
+.nc-message-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+.nc-message-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 80px;
+    box-sizing: border-box;
+}
+
+.nc-message-input:focus {
+    outline: none;
+    border-color: #25d366;
+    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.1);
+}
+
+.nc-send-message {
+    width: 100%;
+    padding: 12px;
+    background: #1faa52;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.nc-send-message:hover {
+    background: #25d366;
+}
+
+.nc-whatsapp-send-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.nc-close-popup {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.nc-close-popup:hover {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .nc-hide-mobile {
+        display: none;
+    }
+    
+    .nc-whatsapp-popup {
+        position: fixed;
+        bottom: 90px;
+        left: 20px;
+        right: 20px;
+        width: auto;
+    }
+}
